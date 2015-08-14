@@ -131,7 +131,7 @@ class Database:
 if __name__ == "__main__":
     database = Database()
     command = raw_input()
-    while command.strip() != "END":
+    while command != None and command.strip() != "END":
         database.handle_command(command)
         command = raw_input()
 
